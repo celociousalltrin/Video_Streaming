@@ -1,11 +1,22 @@
-import React from 'react'
+import React from 'react';
+import "./HomeScreen.css";
+import Nav from '../../Component/Nav/Navbar';
 
 const HomeScreen = () => {
   return (
-    <div>
-        <h1>Home Screen </h1>
+    <div className="homeScreen">
+        <Nav />
+
+        {/* Banner */}
+
+        {/* Row */}
+        {/* Row */}
+        {/* Row */}
+        {/* Row */}
+        
         </div>
   )
 }
 
 export default HomeScreen;
+
