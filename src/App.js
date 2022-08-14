@@ -1,18 +1,20 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from "../src/Pages/HomeScreen/HomeScreen";
-import "./App.css"
+import "./App.css";
+import ProfileScreen from './Pages/ProfileScreen/ProfileScreen';
+import LoginScreen from './Pages/LoginScreen/LoginScreen';
 
 const App = () => {
-  const user = 75;
+  const user = null;
   return (
     <div className='app'>
       <Router>
     {
       !user ? (
-      <h1>Login Screen</h1>) :(
+      <LoginScreen />) :(
       <Routes>
-        {/* <Route path="/profile" element={} /> */}
+        <Route path="/profile" element={<ProfileScreen />} />
         <Route path = "/" element={<HomeScreen />} />
       </Routes>
       )

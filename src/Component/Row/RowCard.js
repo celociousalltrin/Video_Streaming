@@ -31,7 +31,7 @@ const RowCard = ({title,fetchURL, isLarge = false}) => {
        ))
        ) 
     })
-console.log(card)
+
   return (
     <div className="RowCard">
    <h2>{title}</h2>

@@ -8,7 +8,7 @@ const Row = () => {
     <RowCard
     title="NETFLIX ORIGINALS"
     fetchURL={request.fetchNetflixOriginals}
-    isLarge
+    isLarge = {true}
   />
   <RowCard title="Trending Now" fetchURL={request.fetchTrending} />
   <RowCard title="Top Rated" fetchURL={request.fetchTopRated} />
