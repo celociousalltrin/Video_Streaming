@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomeScreen from "../src/Pages/HomeScreen/HomeScreen";
+import "./App.css"
 
 const App = () => {
   const user = 75;
