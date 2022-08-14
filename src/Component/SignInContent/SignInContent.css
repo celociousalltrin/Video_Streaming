@@ -30,6 +30,7 @@
   
   .SignInContent__link:hover {
     cursor: pointer;
+    text-decoration: underline;
   }
   
   .SignInContent > form > input {
