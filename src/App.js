@@ -11,7 +11,6 @@ import { auth } from './firebase';
 
 const App = () => {
   const user = useSelector(selectUser);
-  console.log(user)
 
   const dispatch = useDispatch();
 

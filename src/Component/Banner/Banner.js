@@ -6,6 +6,7 @@ import requests from '../../Utils/request';
 
 const Banner = () => {
     const [movie,setMovie] = useState([])
+    console.log(movie)
 
 useEffect(()=>{
     CUSTOMAPI.get(requests.fetchNetflixOriginals)
