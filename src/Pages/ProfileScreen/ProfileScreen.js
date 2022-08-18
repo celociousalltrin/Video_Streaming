@@ -7,6 +7,7 @@ import avatar from "../../../src/Assets/Netflix-avatar.png"
 import { signOut } from 'firebase/auth';
 import { auth } from '../../firebase';
 import "./ProfileScreen.css";
+import Plans from "../../Component/Plans/Plans"
 
 
 const ProfileScreen = () => {
@@ -20,14 +21,14 @@ const ProfileScreen = () => {
     <div className='ProfileScreen'>
         <Nav />
         <div className='ProfileScreen__body'>
-          <h1>Edit Profile</h1>
+          <h1>Profile</h1>
           <div className='ProfileScreen__info'>
          <img src={avatar} alt=" "/>
          <div className='ProfileScreen__details'>
           <h2>{user.email}</h2>
           <div className='ProfileScreen__plans'>
             <h3>Plans</h3>
-            {/* plans */}
+            <Plans />
             <button className='ProfileScreen__signOut' onClick={signaway}>
               Sign Out
             </button>
