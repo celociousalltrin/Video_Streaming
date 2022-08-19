@@ -13,9 +13,6 @@ const Plans = () => {
   const user = useSelector(selectUser);
   const [subscription, setSubscription] = useState(null);
 
-
-
-
   useEffect(() => {
     const fetchData = async () => {
       const q = query(collection(db, "customers", user.uid, "subscriptions"));
